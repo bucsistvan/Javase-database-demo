@@ -19,7 +19,7 @@ public class JPAMain {
             System.out.println(customer1.getId() + " " + customer1.getFullName() + " " +customer1.getUsername());
         });
 
-        customerDAO.findByName("2Szüts Bálint").forEach(customer1 -> {
+        customerDAO.findByName("Szüts Bálint").forEach(customer1 -> {
             customer1.setFullName("Kecske"+System.currentTimeMillis());
             customerDAO.update(customer1);
         });
